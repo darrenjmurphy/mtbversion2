@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Home Page</title>
+            <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+            <style>
+                  #logo h1 {
+                  font-family: 'Orbitron';font-size: 50px;
+                  color: orange;
+                  }
+            </style>
+
+            <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <!-- Page Container -->
+        <div id="container">
+          <!-- Header -->
+          <header>
+            <!-- Logo -->
+            <div id = "logo">
+               <h1>Override</h1> 
+            </div>
+            <!-- Navigation -->
+            <nav>
+              <ul>
+                  <li>
+                      <a href="index.html" title="Override">
+                        Home
+                      </a>
+                  </li>
+                  
+                  <li>
+                      <a href="about.html" title="About us page">
+                        About
+                      </a>
+                  </li>
+                  
+                  <li>
+                      <a href="projects.html" title="Projects page">
+                        Projects
+                      </a>
+                  </li>
+                        
+                  <li>
+                      <a href="shop.html" title="Online shop" class="active">
+                        Shop
+                      </a>
+                  
+                  </li>
+                  
+                  <li>
+                      <a href="comments.html" title="Latest feed from comment page.">
+                        Community
+                      </a>
+                  </li>
+                </ul>   
+            </nav>
+                
+            </header>
+        
+        
+         
+         
+            
+            
+<section id="com-text">
+    <h1>Shop</h1>
+          <div class="row">
+          <div class="left" >
+          <h2>Catalogue</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="https://www.saracen.co.uk/collections/types?q=Framesets">Frames</a></li>
+      <li><a href="https://www.continental-tires.com/bicycle/tires/mountainbike-tires/kryptotal-re">Tyres</a></li>
+      <li><a href="https://www.raceface.com/collections/handlebars">Bars</a></li>
+      <li><a href="https://nukeproof.com/collections/components-stems">Stems</a></li>
+      <li><a href="https://bike.shimano.com/en-EU/components/mtb/category/brake.html">Brakes</a></li>
+      <li><a href="https://bike.shimano.com/en-EU/components/mtb/category/rear-derailleur.html">Gears</a></li>
+      <li><a href="ebikekit.html">E-Bike Kits</a></li>
+      <li><a href="seatposts.html">Seatposts</a></li>
+      <li><a href="https://uk.jbl.com/bluetooth-speakers/?gclsrc=ds">Bluetooth Speakers</a></li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+        </div>
+        <script src="script.js">
+        </script>
+            <!-- Footer -->
+            <footer>
+              <small>&copy; 2022 Override Ltd. All Rights Reserved</small> - <a href="sitemap.html" title="Links to all the pages on this website">Sitemap</a>
+            </footer>
+        </div>
+</body>
+</html>
