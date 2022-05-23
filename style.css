@@ -1,5 +1,5 @@
 body {
-	background: rgb(96, 118, 0);
+	background-color: lightblue;;
 	background: url('https://wallpaperaccess.com/full/209750.jpg');
 	color: #983e17;
 	padding-top: 15px;
@@ -145,20 +145,6 @@ body {
 	padding: 24px;
   }
 
-
-  /* Right column (page content)
-  .right {
-	flex: 65%;
-	padding: 15px;
-  } */
-  
-  /* Style the search box */
-  /* #mySearch {
-	width: 100%;
-	font-size: 18px;
-	padding: 11px;
-	border: 1px solid #ddd; 
-  }*/
   #mySearch{
 	border-radius: 25px;
 	border: 2px solid #eee;
@@ -166,7 +152,8 @@ body {
 	width: 200px;
 	height: 15px;  
   }
-  /* Style the navigation menu inside the left column */
+
+/* Style the navigation menu inside the left column */
   #myMenu {
 	list-style-type: none;
 	padding: 0;
@@ -192,10 +179,7 @@ body {
   /* </head> */
   <body>
   
-
-
 /* Communty Page */
-
 section#com-text {
 	width: 100%;
 	height: 500px;
